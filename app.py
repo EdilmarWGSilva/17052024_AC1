@@ -29,15 +29,19 @@ def showSignUp():
 def signUp():
     try:
         _name = request.form['inputName']
+        _endereco = request.form['inputEndereco']
+        _telefone = request.form['inputTelefone']
         _email = request.form['inputEmail']
         _password = request.form['inputPassword']
-
+        
         print(_name)
+        print(_endereco)
+        print(_telefone)
         print(_email)
         print(_password)
-
+        
         # validate the received values
-        if _name and _email and _password:
+        if _name and _endereco and _telefone and _email and _password:
             
             # All Good, let's call MySQL
             
